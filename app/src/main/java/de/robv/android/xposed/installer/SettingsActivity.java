@@ -107,9 +107,8 @@ public class SettingsActivity extends XposedBaseActivity implements FolderChoose
                 }
             });
 
-            // TODO maybe enable again after checking the implementation
-            //downloadLocation = findPreference("download_location");
-            //downloadLocation.setOnPreferenceClickListener(this);
+            downloadLocation = findPreference("download_location");
+            downloadLocation.setOnPreferenceClickListener(this);
         }
 
         @Override

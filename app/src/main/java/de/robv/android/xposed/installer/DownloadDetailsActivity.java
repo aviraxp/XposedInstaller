@@ -180,12 +180,8 @@ public class DownloadDetailsActivity extends XposedBaseActivity implements Loade
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_download_details, menu);
 
-        // TODO maybe enable again after checking the implementation
-        menu.findItem(R.id.menu_bookmark).setVisible(false);
-        menu.findItem(R.id.menu_share).setVisible(false);
-
-        //mItemBookmark = menu.findItem(R.id.menu_bookmark);
-        //setupBookmark(false);
+        mItemBookmark = menu.findItem(R.id.menu_bookmark);
+        setupBookmark(false);
         return true;
     }
 
