@@ -36,6 +36,10 @@ public class XposedApp extends Application implements ActivityLifecycleCallbacks
     private static final String[] XPOSED_PROP_FILES = new String[]{
             "/su/xposed/xposed.prop", // official systemless
             "/system/xposed.prop",    // classical
+            "/magisk/xposed/system/xposed.prop", // magisk systemless
+            "/su/xposed/system/xposed.prop", // old topjohnwu's systemless
+            "/vendor/xposed.prop", // deprecated systemless
+            "/xposed/xposed.prop", // deprecated systemless
     };
 
     public static int WRITE_EXTERNAL_PERMISSION = 69;
