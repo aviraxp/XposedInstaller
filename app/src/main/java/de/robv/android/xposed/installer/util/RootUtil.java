@@ -307,7 +307,7 @@ public class RootUtil {
     }
 
     private boolean softReboot(LineCallback callback) {
-        return execute("setprop ctl.restart surfaceflinger; setprop ctl.restart zygote", callback) == 0;
+        return execute("setprop ctl.restart surfaceflinger", callback) == 0;
     }
 
     private boolean rebootToRecovery(LineCallback callback) {
